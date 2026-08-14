@@ -1,11 +1,15 @@
 # Employee Management API
 
+Author: Sabina Adaku Okpala
+
+Java Developer | Database Administrator | Software Development
+
 A RESTful Employee Management API built with Java and Spring Boot.
 
 ## Technologies Used
 
-- Java 8
-- Spring Boot 2.7.18
+- Java
+- Spring Boot
 - Spring Data JPA
 - Hibernate
 - MySQL
@@ -13,6 +17,7 @@ A RESTful Employee Management API built with Java and Spring Boot.
 - REST API
 - Swagger / OpenAPI
 - Postman
+- Git & GitHub
 
 ## Features
 
@@ -21,53 +26,62 @@ A RESTful Employee Management API built with Java and Spring Boot.
 - Get an employee by ID
 - Update an employee
 - Delete an employee
-- Input validation
+- Employee validation
 - Global exception handling
 - MySQL database integration
 - Swagger API documentation
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | `/employees` | Get all employees |
-| GET | `/employees/{id}` | Get employee by ID |
-| POST | `/employees` | Create employee |
-| PUT | `/employees/{id}` | Update employee |
-| DELETE | `/employees/{id}` | Delete employee |
+GET /employees - Get all employees
+
+GET /employees/{id} - Get employee by ID
+
+POST /employees - Create an employee
+
+PUT /employees/{id} - Update an employee
+
+DELETE /employees/{id} - Delete an employee
 
 ## Employee Fields
 
-- ID
-- First Name
-- Last Name
-- Email
-- Department
-- Position
+ID  
+First Name  
+Last Name  
+Email  
+Department  
+Position
 
 ## Running the Application
 
 1. Configure MySQL.
 2. Set the `DB_PASSWORD` environment variable.
 3. Run `EmployeeManagementApiApplication`.
-4. The API runs on port 8082.
+4. The application runs on:
+
+[http://localhost:8082](http://localhost:8082)
 
 ## Swagger Documentation
 
-When the application is running, open:
+The API documentation is available through Swagger UI.
 
-`http://localhost:8082/swagger-ui.html`
+[Open Swagger UI](http://localhost:8082/swagger-ui.html)
 
-## Validation
+## Database Security
 
-The API validates employee information before saving it.
+The database password is stored using an environment variable.
 
-Invalid requests return a 400 Bad Request response.
+spring.datasource.password=${DB_PASSWORD}
 
+The actual database password is not stored in the GitHub repository.
+
+## GitHub Repository
+
+[Employee Management API](https://github.com/sabina24us/employee-management-api)
 ## Author
 
-**Sabina Adaku Okpala**
+Sabina Adaku Okpala
 
 Java Developer | Database Administrator | Software Development
 
-[LinkedIn](https://www.linkedin.com/in/sabina-okpala-935067211)
+[LinkedIn Profile](https://www.linkedin.com/in/sabina-okpala-935067211)
